@@ -10,9 +10,8 @@ import de.fhpotsdam.unfolding.utils.MapUtils;
 
 /** HelloWorld
   * An application with two maps side-by-side zoomed in on different locations.
-  * Author: UC San Diego Coursera Intermediate Programming team
-  * @author Your name here
-  * Date: July 17, 2015
+  * @author Jane Sicat
+  * Date: November 10, 2017
   * */
 public class HelloWorld extends PApplet
 {
@@ -29,10 +28,10 @@ public class HelloWorld extends PApplet
 	// IF YOU ARE WORKING OFFLINE: Change the value of this variable to true
 	private static final boolean offline = false;
 	
-	/** The map we use to display our home town: La Jolla, CA */
+	/** The map we use to display your home: Sin Ming Avenue */
 	UnfoldingMap map1;
 	
-	/** The map you will use to display your home town */ 
+	/** The map you will use to display yopur school: NUS */ 
 	UnfoldingMap map2;
 
 	public void setup() {
@@ -69,7 +68,7 @@ public class HelloWorld extends PApplet
 
 		// The next line zooms in and centers the map at 
 	    // 32.9 (latitude) and -117.2 (longitude)
-	    map1.zoomAndPanTo(zoomLevel, new Location(32.9f, -117.2f));
+	    map1.zoomAndPanTo(zoomLevel, new Location(1.363112f, 103.833904f));
 	    
 		// This line makes the map interactive
 		MapUtils.createDefaultEventDispatcher(this, map1);
